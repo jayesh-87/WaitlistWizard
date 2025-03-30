@@ -6,40 +6,40 @@ import { ChevronRight } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "Predictive Maintenance AI",
-      description: "AI system that predicts equipment failures before they occur, reducing downtime and maintenance costs by up to 35%.",
-      technologies: ["TensorFlow", "Python", "Time Series Analysis"],
+      title: "Personal Portfolio Website",
+      description: "Developed a responsive portfolio website using React, TypeScript, and Tailwind CSS to showcase skills, projects, and contact information.",
+      technologies: ["React", "TypeScript", "Tailwind CSS"],
+      imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      title: "Student Information System",
+      description: "Created a database-driven application to manage student records, course registrations, and academic performance tracking.",
+      technologies: ["Java", "MySQL", "JDBC"],
+      imageUrl: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      title: "Weather Forecast Application",
+      description: "Built a web application that fetches and displays weather data from an external API, with location search and 5-day forecast functionality.",
+      technologies: ["JavaScript", "HTML/CSS", "REST APIs"],
+      imageUrl: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      title: "Task Management App",
+      description: "Developed a task management application with features including task creation, priority setting, due dates, and completed task tracking.",
+      technologies: ["React", "Node.js", "MongoDB"],
+      imageUrl: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      title: "E-commerce Product Catalog",
+      description: "Created a product catalog for an e-commerce platform with filtering, sorting, and search capabilities to enhance user experience.",
+      technologies: ["JavaScript", "Bootstrap", "JSON"],
+      imageUrl: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      title: "Data Visualization Dashboard",
+      description: "Built an interactive dashboard to visualize and analyze data sets, featuring multiple chart types and customizable views.",
+      technologies: ["Python", "Pandas", "Matplotlib"],
       imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      title: "Financial Market Analysis",
-      description: "Real-time analysis of market trends and patterns to identify investment opportunities and risk factors with 92% accuracy.",
-      technologies: ["PyTorch", "R", "NLP"],
-      imageUrl: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      title: "Healthcare Diagnostic Platform",
-      description: "AI-powered diagnostic tool that assists healthcare professionals in identifying conditions from medical imaging with 97% precision.",
-      technologies: ["Computer Vision", "CUDA", "Deep Learning"],
-      imageUrl: "https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      title: "Smart Retail Analytics",
-      description: "In-store analytics platform that optimizes product placement and inventory management through real-time customer behavior analysis.",
-      technologies: ["React", "Python", "Computer Vision"],
-      imageUrl: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      title: "Autonomous Vehicle Perception",
-      description: "Computer vision system for autonomous vehicles that detects and classifies road objects with sub-millisecond latency.",
-      technologies: ["CUDA", "C++", "PyTorch"],
-      imageUrl: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      title: "Natural Language Processing API",
-      description: "REST API for text analysis, sentiment detection, entity recognition, and automated content generation with multilingual support.",
-      technologies: ["BERT", "FastAPI", "Python"],
-      imageUrl: "https://images.unsplash.com/photo-1555421689-491a97ff2040?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
 
@@ -57,7 +57,7 @@ const Projects = () => {
             Featured Projects
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
-            Explore my innovative solutions across different industries and technologies.
+            A collection of academic and personal projects showcasing my technical skills and learning journey.
           </p>
         </motion.div>
 

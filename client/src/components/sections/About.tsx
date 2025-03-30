@@ -8,26 +8,26 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 
 const About = () => {
-  const experienceAreas = [
+  const interestAreas = [
     {
       icon: <Brain className="h-6 w-6 text-blue-600" />,
       title: "Artificial Intelligence",
-      description: "Developing advanced AI systems that solve complex problems through machine learning and deep learning approaches."
+      description: "Learning about AI systems and exploring how machine learning and deep learning can solve complex problems."
     },
     {
       icon: <Database className="h-6 w-6 text-green-600" />,
       title: "Data Science",
-      description: "Extracting insights from data using statistical methods, predictive modeling, and data visualization techniques."
+      description: "Studying how to extract meaningful insights from data through statistical analysis and visualization techniques."
     },
     {
       icon: <PieChart className="h-6 w-6 text-purple-600" />,
       title: "Machine Learning",
-      description: "Building models that learn from data to make predictions, recommendations, and automated decisions."
+      description: "Exploring how to build models that can learn from data to make predictions and automate decision processes."
     },
     {
       icon: <Code className="h-6 w-6 text-amber-600" />,
       title: "Software Development",
-      description: "Creating robust, scalable applications with modern technologies and best practices in software engineering."
+      description: "Developing my skills in creating applications with modern technologies and following best practices in software engineering."
     }
   ];
 
@@ -45,7 +45,7 @@ const About = () => {
             About Me
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
-            I'm a passionate expert dedicated to creating innovative solutions through technology.
+            I'm a motivated IT student passionate about learning and applying technology to solve real-world problems.
           </p>
         </motion.div>
 
@@ -117,9 +117,9 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.4, duration: 0.5 }}
         >
-          <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Areas of Expertise</h3>
+          <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Areas of Interest & Learning</h3>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {experienceAreas.map((area, index) => (
+            {interestAreas.map((area, index) => (
               <motion.div 
                 key={area.title}
                 className="relative group"
