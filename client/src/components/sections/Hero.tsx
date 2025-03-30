@@ -39,7 +39,7 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
             >
-              I build intelligent systems and applications that help businesses solve complex problems and drive growth. Specializing in artificial intelligence, machine learning, and data science.
+              IT student at MGM University with a passion for learning and applying technologies like AI, machine learning, and software development to create innovative solutions for real-world problems.
             </motion.p>
             <motion.div 
               className="mt-10 flex justify-center gap-4"

@@ -19,7 +19,7 @@ const Footer = () => {
               <span className="ml-2 text-xl font-bold">Jayesh Solanke</span>
             </div>
             <p className="mt-4 text-gray-400 max-w-md">
-              Transforming ideas into reality through innovative AI, machine learning, and data science solutions. My expertise helps organizations make better decisions and achieve their goals.
+              IT student at MGM University passionate about AI, machine learning, and software development. Building my skills to create innovative solutions for real-world problems.
             </p>
             <div className="mt-6 flex space-x-6">
               <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
@@ -30,7 +30,7 @@ const Footer = () => {
                 <span className="sr-only">LinkedIn</span>
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://github.com/jayesh-87" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <span className="sr-only">GitHub</span>
                 <Github className="h-6 w-6" />
               </a>
