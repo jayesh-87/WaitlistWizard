@@ -1,4 +1,4 @@
-import { pgTable, text, serial } from "drizzle-orm/pg-core";
+import { pgTable, text, serial, boolean } from "drizzle-orm/pg-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
@@ -23,6 +23,7 @@ export const contacts = pgTable("contacts", {
   email: text("email").notNull(),
   subject: text("subject").notNull(),
   message: text("message").notNull(),
+  requestResume: boolean("requestResume").default(false),
 });
 
 export const insertContactSchema = createInsertSchema(contacts).pick({
@@ -30,6 +31,7 @@ export const insertContactSchema = createInsertSchema(contacts).pick({
   email: true,
   subject: true,
   message: true,
+  requestResume: true,
 });
 
 export type InsertContact = z.infer<typeof insertContactSchema>;

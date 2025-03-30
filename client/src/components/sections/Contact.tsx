@@ -63,11 +63,21 @@ const Contact = () => {
     mutationFn: (values: FormValues) => apiRequest("POST", "/api/contact", values),
     onSuccess: () => {
       setIsSubmitSuccessful(true);
-      toast({
-        title: "Message sent!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
-        variant: "default",
-      });
+      
+      if (resumeRequested) {
+        toast({
+          title: "Resume Requested!",
+          description: "I've received your resume request and will review it shortly.",
+          variant: "default",
+        });
+      } else {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for reaching out. I'll get back to you soon.",
+          variant: "default",
+        });
+      }
+      
       form.reset();
     },
     onError: (error) => {
