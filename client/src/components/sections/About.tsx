@@ -59,16 +59,16 @@ const About = () => {
           <div className="lg:col-span-2">
             <Card>
               <CardContent className="p-6">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Professional Background</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Academic Background</h3>
                 <div className="space-y-4 text-gray-600">
                   <p>
-                    With over 10 years of experience in technology, I've specialized in applying artificial intelligence and data science to solve real-world business problems. My journey has taken me through various industries including finance, healthcare, and e-commerce, where I've developed innovative solutions that drive measurable outcomes.
+                    I am currently pursuing a B.Tech in Information Technology (expected graduation 2026) from MGM University. I am passionate about applying technology to solve real-world problems and continuously expanding my skills through practical implementation and learning.
                   </p>
                   <p>
-                    I hold a Master's degree in Computer Science with a specialization in Machine Learning from Stanford University, and have continuously expanded my expertise through research and practical implementation of cutting-edge technologies.
+                    My education is giving me a strong foundation in software development, data structures, algorithms, and modern programming paradigms. I have been focusing on building my expertise in areas like AI, machine learning, and data science through coursework, projects, and self-study.
                   </p>
                   <p>
-                    My approach combines technical excellence with business acumen, ensuring that the solutions I create not only push technological boundaries but also deliver tangible value to organizations and end-users.
+                    My approach combines technical knowledge with creative problem-solving, aiming to create solutions that are innovative, efficient, and deliver real value to users and organizations.
                   </p>
                 </div>
               </CardContent>
@@ -82,27 +82,27 @@ const About = () => {
                 <ul className="space-y-3">
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-                    <span>10+ years in tech industry</span>
+                    <span>B.Tech in Information Technology (2026)</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-                    <span>MSc in Computer Science (ML)</span>
+                    <span>MGM University Student</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-                    <span>50+ successfully completed projects</span>
+                    <span>Tech Enthusiast</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-                    <span>Published researcher</span>
+                    <span>Problem Solver</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-                    <span>Industry speaker & consultant</span>
+                    <span>Continuous Learner</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-                    <span>Open source contributor</span>
+                    <span>Aspiring Developer</span>
                   </li>
                 </ul>
               </CardContent>
