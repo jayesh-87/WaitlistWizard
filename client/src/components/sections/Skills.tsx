@@ -11,60 +11,67 @@ import {
 const Skills = () => {
   const skills = [
     {
-      title: "Artificial Intelligence",
-      icon: <Brain className="h-6 w-6 text-blue-600" />,
-      description: "Development of advanced AI systems that can understand, learn, and adapt to complex environments.",
+      title: "Software Development",
+      icon: <Code2 className="h-6 w-6 text-blue-600" />,
+      description: "Development of applications and websites using modern programming languages and frameworks.",
       technologies: [
-        { name: "Neural Networks", color: "bg-blue-100 text-blue-800" },
-        { name: "Deep Learning", color: "bg-blue-100 text-blue-800" },
-        { name: "NLP", color: "bg-blue-100 text-blue-800" },
-        { name: "Computer Vision", color: "bg-blue-100 text-blue-800" },
-        { name: "Reinforcement Learning", color: "bg-blue-100 text-blue-800" }
+        { name: "Web Development", color: "bg-blue-100 text-blue-800" },
+        { name: "Object-Oriented Programming", color: "bg-blue-100 text-blue-800" },
+        { name: "Full Stack Development", color: "bg-blue-100 text-blue-800" },
+        { name: "Database Management", color: "bg-blue-100 text-blue-800" },
+        { name: "RESTful APIs", color: "bg-blue-100 text-blue-800" }
       ]
     },
     {
-      title: "Machine Learning",
-      icon: <BarChart3 className="h-6 w-6 text-green-600" />,
-      description: "Implementation of machine learning solutions that enable systems to automatically learn and improve from experience.",
+      title: "Artificial Intelligence",
+      icon: <Brain className="h-6 w-6 text-green-600" />,
+      description: "Learning and applying AI concepts and technologies to develop intelligent solutions.",
       technologies: [
-        { name: "Supervised Learning", color: "bg-green-100 text-green-800" },
-        { name: "Unsupervised Learning", color: "bg-green-100 text-green-800" },
-        { name: "Reinforcement Learning", color: "bg-green-100 text-green-800" },
-        { name: "Model Deployment", color: "bg-green-100 text-green-800" },
-        { name: "Feature Engineering", color: "bg-green-100 text-green-800" }
+        { name: "Machine Learning Basics", color: "bg-green-100 text-green-800" },
+        { name: "Natural Language Processing", color: "bg-green-100 text-green-800" },
+        { name: "Neural Networks", color: "bg-green-100 text-green-800" },
+        { name: "AI Applications", color: "bg-green-100 text-green-800" },
+        { name: "Computer Vision", color: "bg-green-100 text-green-800" }
       ]
     },
     {
       title: "Data Science",
       icon: <Database className="h-6 w-6 text-purple-600" />,
-      description: "Extraction of insights from structured and unstructured data to inform decision-making and strategic business initiatives.",
+      description: "Analysis and interpretation of complex data sets to extract valuable insights and inform decision-making.",
       technologies: [
-        { name: "Big Data", color: "bg-purple-100 text-purple-800" },
-        { name: "Data Mining", color: "bg-purple-100 text-purple-800" },
-        { name: "Predictive Analytics", color: "bg-purple-100 text-purple-800" },
+        { name: "Data Analysis", color: "bg-purple-100 text-purple-800" },
         { name: "Data Visualization", color: "bg-purple-100 text-purple-800" },
-        { name: "Statistical Analysis", color: "bg-purple-100 text-purple-800" }
+        { name: "Statistical Analysis", color: "bg-purple-100 text-purple-800" },
+        { name: "Data Processing", color: "bg-purple-100 text-purple-800" },
+        { name: "Predictive Modeling", color: "bg-purple-100 text-purple-800" }
       ]
     },
     {
-      title: "Software Development",
-      icon: <Code2 className="h-6 w-6 text-amber-600" />,
-      description: "Building robust, scalable applications and systems that integrate seamlessly with existing infrastructure.",
+      title: "Academic Projects",
+      icon: <BarChart3 className="h-6 w-6 text-amber-600" />,
+      description: "Applying classroom knowledge to real-world problems through academic and personal projects.",
       technologies: [
-        { name: "Web Applications", color: "bg-amber-100 text-amber-800" },
-        { name: "Mobile Apps", color: "bg-amber-100 text-amber-800" },
-        { name: "API Development", color: "bg-amber-100 text-amber-800" },
-        { name: "Cloud Services", color: "bg-amber-100 text-amber-800" },
-        { name: "DevOps", color: "bg-amber-100 text-amber-800" }
+        { name: "Research", color: "bg-amber-100 text-amber-800" },
+        { name: "Project Management", color: "bg-amber-100 text-amber-800" },
+        { name: "Documentation", color: "bg-amber-100 text-amber-800" },
+        { name: "Teamwork", color: "bg-amber-100 text-amber-800" },
+        { name: "Problem Solving", color: "bg-amber-100 text-amber-800" }
       ]
     }
   ];
 
+  const programmingLanguages = [
+    "Java", "Python", "JavaScript", "HTML", "CSS", "SQL"
+  ];
+  
   const frameworksAndTools = [
-    "Python", "TensorFlow", "PyTorch", "Scikit-learn", "Pandas", "NumPy",
-    "R", "Java", "JavaScript", "TypeScript", "React", "Node.js",
-    "AWS", "GCP", "Azure", "Docker", "Kubernetes", "Git",
-    "SQL", "NoSQL", "MongoDB", "PostgreSQL", "Hadoop", "Spark"
+    "Git", "VS Code", "Eclipse", "PyCharm", "React", "Node.js",
+    "Bootstrap", "Tailwind CSS", "MongoDB", "MySQL", "Jupyter Notebook"
+  ];
+  
+  const softSkills = [
+    "Communication", "Teamwork", "Problem-Solving", "Critical Thinking", 
+    "Time Management", "Adaptability", "Creativity", "Attention to Detail"
   ];
 
   return (
@@ -81,7 +88,7 @@ const Skills = () => {
             Skills & Expertise
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
-            I combine multiple disciplines to create comprehensive solutions for complex problems.
+            As a student, I'm developing a diverse set of technical and soft skills to prepare for a career in technology.
           </p>
         </motion.div>
 
@@ -135,8 +142,25 @@ const Skills = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.4, duration: 0.5 }}
         >
+          <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Programming Languages</h3>
+          <div className="flex flex-wrap justify-center gap-3 mb-12">
+            {programmingLanguages.map((lang, index) => (
+              <motion.div 
+                key={lang}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 + (index * 0.03), duration: 0.3 }}
+              >
+                <Badge variant="outline" className="text-sm py-1.5 px-3 bg-white border-gray-300 border-2 shadow-sm">
+                  {lang}
+                </Badge>
+              </motion.div>
+            ))}
+          </div>
+
           <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Frameworks & Tools</h3>
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-3 mb-12">
             {frameworksAndTools.map((tool, index) => (
               <motion.div 
                 key={tool}
@@ -147,6 +171,23 @@ const Skills = () => {
               >
                 <Badge variant="outline" className="text-sm py-1.5 px-3 bg-white border-gray-300">
                   {tool}
+                </Badge>
+              </motion.div>
+            ))}
+          </div>
+
+          <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Soft Skills</h3>
+          <div className="flex flex-wrap justify-center gap-3">
+            {softSkills.map((skill, index) => (
+              <motion.div 
+                key={skill}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 + (index * 0.03), duration: 0.3 }}
+              >
+                <Badge variant="outline" className="text-sm py-1.5 px-3 bg-white border-blue-200 border-2 bg-blue-50">
+                  {skill}
                 </Badge>
               </motion.div>
             ))}
