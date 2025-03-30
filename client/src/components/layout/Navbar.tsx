@@ -70,10 +70,10 @@ const Navbar = () => {
             </Button>
           </div>
 
-          {/* Resume Download Button */}
+          {/* Resume Request Button */}
           <div className="hidden md:block">
-            <Button>
-              Download Resume
+            <Button variant="outline" onClick={() => window.location.href = "#contact"}>
+              Request Resume
             </Button>
           </div>
         </div>
@@ -103,7 +103,16 @@ const Navbar = () => {
               </a>
             ))}
             <div className="mt-4 px-3 py-2">
-              <Button className="w-full">Download Resume</Button>
+              <Button 
+                variant="outline" 
+                className="w-full"
+                onClick={() => {
+                  window.location.href = "#contact";
+                  setIsMobileMenuOpen(false);
+                }}
+              >
+                Request Resume
+              </Button>
             </div>
           </div>
         </motion.div>

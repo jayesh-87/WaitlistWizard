@@ -17,6 +17,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
 import { 
   Mail, 
   Phone, 
@@ -37,6 +38,7 @@ const formSchema = z.object({
   message: z.string().min(10, {
     message: "Message must be at least 10 characters.",
   }),
+  requestResume: z.boolean().default(false),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -44,6 +46,7 @@ type FormValues = z.infer<typeof formSchema>;
 const Contact = () => {
   const { toast } = useToast();
   const [isSubmitSuccessful, setIsSubmitSuccessful] = useState(false);
+  const [resumeRequested, setResumeRequested] = useState(false);
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -52,6 +55,7 @@ const Contact = () => {
       email: "",
       subject: "",
       message: "",
+      requestResume: false,
     },
   });
 
@@ -76,6 +80,7 @@ const Contact = () => {
   });
 
   function onSubmit(values: FormValues) {
+    setResumeRequested(values.requestResume);
     mutation.mutate(values);
   }
 
@@ -161,9 +166,20 @@ const Contact = () => {
                   <p className="mt-2 text-gray-600">
                     Thank you for reaching out. I'll get back to you as soon as possible.
                   </p>
+                  {resumeRequested && (
+                    <div className="mt-4 bg-blue-50 text-blue-800 rounded-md p-4 text-sm">
+                      <p>
+                        <span className="font-semibold">Resume requested:</span> I've received your resume request and will review it. 
+                        If approved, I'll share my resume with you directly via email.
+                      </p>
+                    </div>
+                  )}
                   <div className="mt-6">
                     <Button
-                      onClick={() => setIsSubmitSuccessful(false)}
+                      onClick={() => {
+                        setIsSubmitSuccessful(false);
+                        setResumeRequested(false);
+                      }}
                       variant="outline"
                     >
                       Send another message
@@ -231,6 +247,29 @@ const Contact = () => {
                             />
                           </FormControl>
                           <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    
+                    <FormField
+                      control={form.control}
+                      name="requestResume"
+                      render={({ field }) => (
+                        <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4">
+                          <FormControl>
+                            <Checkbox
+                              checked={field.value}
+                              onCheckedChange={field.onChange}
+                            />
+                          </FormControl>
+                          <div className="space-y-1 leading-none">
+                            <FormLabel className="text-gray-700">
+                              Request Resume
+                            </FormLabel>
+                            <p className="text-sm text-gray-500">
+                              Check this box if you'd like to request access to my resume for professional purposes.
+                            </p>
+                          </div>
                         </FormItem>
                       )}
                     />

@@ -41,6 +41,19 @@ const Hero = () => {
             >
               IT student at MGM University with a passion for learning and applying technologies like AI, machine learning, and software development to create innovative solutions for real-world problems.
             </motion.p>
+            <motion.p 
+              className="mt-3 max-w-2xl mx-auto text-sm text-blue-600 flex items-center justify-center"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+            >
+              <span className="inline-flex items-center">
+                <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Use the contact form to request my resume for review opportunities
+              </span>
+            </motion.p>
             <motion.div 
               className="mt-10 flex justify-center gap-4"
               initial={{ opacity: 0 }}
