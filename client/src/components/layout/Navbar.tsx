@@ -34,9 +34,9 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-blue-500 to-violet-500 flex items-center justify-center">
-                <span className="text-white font-bold text-xl">P</span>
+                <span className="text-white font-bold text-xl">J</span>
               </div>
-              <span className="ml-2 text-xl font-bold text-gray-900">Portfolio</span>
+              <span className="ml-2 text-xl font-bold text-gray-900">Jayesh Solanke</span>
             </Link>
           </div>
 

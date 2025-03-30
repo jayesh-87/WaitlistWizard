@@ -14,9 +14,9 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-blue-500 to-violet-500 flex items-center justify-center">
-                <span className="text-white font-bold text-xl">P</span>
+                <span className="text-white font-bold text-xl">J</span>
               </div>
-              <span className="ml-2 text-xl font-bold">Portfolio</span>
+              <span className="ml-2 text-xl font-bold">Jayesh Solanke</span>
             </div>
             <p className="mt-4 text-gray-400 max-w-md">
               Transforming ideas into reality through innovative AI, machine learning, and data science solutions. My expertise helps organizations make better decisions and achieve their goals.
@@ -34,7 +34,7 @@ const Footer = () => {
                 <span className="sr-only">GitHub</span>
                 <Github className="h-6 w-6" />
               </a>
-              <a href="mailto:contact@example.com" className="text-gray-400 hover:text-white transition-colors">
+              <a href="mailto:jayeshsolanke47@gmail.com" className="text-gray-400 hover:text-white transition-colors">
                 <span className="sr-only">Email</span>
                 <Mail className="h-6 w-6" />
               </a>
@@ -93,7 +93,7 @@ const Footer = () => {
         </div>
         <div className="mt-12 border-t border-gray-800 pt-8">
           <p className="text-base text-gray-400 text-center">
-            &copy; {new Date().getFullYear()} Professional Portfolio. All rights reserved.
+            &copy; {new Date().getFullYear()} Jayesh Solanke. All rights reserved.
           </p>
         </div>
       </div>
