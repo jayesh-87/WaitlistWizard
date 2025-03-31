@@ -1,13 +1,18 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, useLocation } from "wouter";
 import { Toaster } from "@/components/ui/toaster";
 import Home from "@/pages/Home";
 import NotFound from "@/pages/not-found";
 
 function Router() {
+  const [, setLocation] = useLocation();
+  
+  // Handle GitHub Pages base URL
+  const baseUrl = '/WaitlistWizard';
+  
   return (
     <Switch>
-      <Route path="/" component={Home} />
-      <Route component={NotFound} />
+      <Route path={`${baseUrl}/`} component={Home} />
+      <Route path={`${baseUrl}/:rest*`} component={NotFound} />
     </Switch>
   );
 }
