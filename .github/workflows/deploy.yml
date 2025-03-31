@@ -26,13 +26,24 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install missing dependencies
+        run: npm install react-hook-form @hookform/resolvers zod \
+         @radix-ui/react-aspect-ratio @radix-ui/react-avatar \
+         @radix-ui/react-context-menu @radix-ui/react-dropdown-menu \
+         @radix-ui/react-hover-card @radix-ui/react-menubar \
+         @radix-ui/react-navigation-menu @radix-ui/react-popover \
+         @radix-ui/react-progress @radix-ui/react-radio-group \
+         @radix-ui/react-scroll-area @radix-ui/react-select \
+         @radix-ui/react-separator @radix-ui/react-slider \
+         @radix-ui/react-switch @radix-ui/react-tabs \
+         @radix-ui/react-toggle-group @radix-ui/react-toggle \
+         @radix-ui/react-tooltip embla-carousel-react recharts \
+         react-day-picker drizzle-orm drizzle-zod input-otp vaul
+
+
       - name: Build
         run: npm run build
         
-      - name: Install dependencies
-        run: npm ci
-
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
