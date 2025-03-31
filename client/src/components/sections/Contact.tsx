@@ -190,7 +190,7 @@ const Contact = () => {
                         setIsSubmitSuccessful(false);
                         setResumeRequested(false);
                       }}
-                      variant="outline"
+                      className="bg-blue-500 text-white hover:bg-blue-600"
                     >
                       Send another message
                     </Button>
@@ -207,7 +207,7 @@ const Contact = () => {
                           <FormItem>
                             <FormLabel className="text-gray-700">Full Name</FormLabel>
                             <FormControl>
-                              <Input placeholder="John Doe" {...field} />
+                              <Input placeholder="Enter your full name" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -221,7 +221,7 @@ const Contact = () => {
                           <FormItem>
                             <FormLabel className="text-gray-700">Email Address</FormLabel>
                             <FormControl>
-                              <Input placeholder="john@example.com" {...field} />
+                              <Input placeholder="Enter your email address" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
